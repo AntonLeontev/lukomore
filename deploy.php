@@ -19,6 +19,10 @@ task('build', function () {
     run('npm run build');
 });
 
+task('reboot', function () {
+    run('sudo reboot');
+});
+
 // Hosts
 
 host('81.177.139.224')
@@ -29,3 +33,4 @@ host('81.177.139.224')
 
 after('deploy:failed', 'deploy:unlock');
 after('deploy:vendors', 'build');
+after('deploy:success', 'reboot');
