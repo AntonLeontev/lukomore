@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
@@ -15,3 +16,5 @@ Route::view('/additional', 'additional')->name('additional');
 Route::view('/sale', 'sale')->name('sale');
 Route::view('/mother-capital', 'mothers-cap')->name('mothers-cap');
 Route::view('/food', 'food')->name('food');
+
+Route::post('request', [RequestController::class, 'send'])->name('request.send');
