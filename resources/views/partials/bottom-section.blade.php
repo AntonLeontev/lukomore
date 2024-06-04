@@ -53,7 +53,7 @@
 								formWrapper.classList.add('_form-success');
 							})
 							.catch((error) => {
-								console.log(error);
+								alert('Произошла ошибка. Попробуйте позвонить нам');
 							});
 					}
 
