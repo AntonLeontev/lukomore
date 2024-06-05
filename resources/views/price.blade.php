@@ -34,9 +34,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_01">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">Полный день</div>
+                                    <div class="tariff__title">{{ price('full_day')->title }}</div>
                                     <div class="tariff__price">
-                                        40 000 <small>₽/мес</small>
+                                        {{ price('full_day')->amount }} <small>₽/мес</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
@@ -73,9 +73,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_02">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">Неполный день</div>
+                                    <div class="tariff__title">{{ price('half_full_day')->title }}</div>
                                     <div class="tariff__price">
-                                        25 000 <small>₽/мес</small>
+                                        {{ price('half_full_day')->amount }} <small>₽/мес</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
@@ -116,9 +116,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_03">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">12 посещений в месяц</div>
+                                    <div class="tariff__title">{{ price('12_visits')->title }}</div>
                                     <div class="tariff__price">
-                                        30 000 <small>₽/мес</small>
+                                        {{ price('12_visits')->amount }} <small>₽/мес</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
@@ -155,9 +155,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_04">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">3 посещения в неделю</div>
+                                    <div class="tariff__title">{{ price('3_visits')->title }}</div>
                                     <div class="tariff__price">
-                                        7 500 <small>₽/мес</small>
+                                        {{ price('3_visits')->amount }} <small>₽/мес</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
@@ -194,9 +194,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_05">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">Один день</div>
+                                    <div class="tariff__title">{{ price('day')->title }}</div>
                                     <div class="tariff__price">
-                                        3 000 <small>₽/мес</small>
+                                        {{ price('day')->amount }} <small>₽</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
@@ -233,9 +233,9 @@
                         <div class="tariffs__slide swiper-slide">
                             <div class="tariff tariff_06">
                                 <div class="tariff__header">
-                                    <div class="tariff__title">Половина дня</div>
+                                    <div class="tariff__title">{{ price('half')->title }}</div>
                                     <div class="tariff__price">
-                                        2 000 <small>₽/мес</small>
+                                        {{ price('half')->amount }} <small>₽</small>
                                     </div>
                                 </div>
                                 <div class="tariff__body body-tariffs">
