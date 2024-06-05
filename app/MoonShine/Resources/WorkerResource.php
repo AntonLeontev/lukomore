@@ -41,7 +41,6 @@ class WorkerResource extends ModelResource
                 TinyMce::make('Описание', 'description')
                     ->menubar('')
                     ->toolbar('undo redo | bold italic underline | bullist numlist | alignleft aligncenter alignright | subscript superscript | removeformat')
-                    ->required()
                     ->hideOnIndex(),
                 Text::make('Должность', 'profession')
                     ->sortable()
@@ -66,7 +65,7 @@ class WorkerResource extends ModelResource
             'name' => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string', 'max:1000'],
             'profession' => ['required', 'string', 'max:255'],
-            'photo' => ['required', 'image', 'max:1024'],
+            'photo' => ['image', 'max:1024'],
         ];
     }
 }
