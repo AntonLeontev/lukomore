@@ -334,7 +334,7 @@
                     <div class="one-day__img -ibg">
                         <img src="{{ Vite::asset('resources/img/one-day-img_price.jpg') }}" alt="Image">
                     </div>
-                    <a href="" class="one-day__btn button">Подробнее</a>
+                    <a href="{{ route('mothers-cap') }}" class="one-day__btn button">Подробнее</a>
                 </div>
             </div>
         </section>
