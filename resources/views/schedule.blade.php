@@ -521,7 +521,7 @@
                             <small>от 2 до 4 лет</small>
                         </div>
                         <div class="group-classes__footer">
-                            <a href="" class="group-classes__btn button">Подробнее</a>
+                            <a href="{{ route('groups.kittens') }}" class="group-classes__btn button">Подробнее</a>
                         </div>
                     </div>
                     <div class="group-classes__item">
@@ -533,7 +533,7 @@
                             <small>от 4 до 7 лет</small>
                         </div>
                         <div class="group-classes__footer">
-                            <a href="" class="group-classes__btn button">Подробнее</a>
+                            <a href="{{ route('groups.cat') }}" class="group-classes__btn button">Подробнее</a>
                         </div>
                     </div>
                 </div>
