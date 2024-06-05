@@ -28,30 +28,12 @@
 		<section class="section-bottom">
 			<div class="support__container">
 				<div data-spollers class="support__spollers spollers">
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Как обеспечивается безопасность детей в детском саду?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Что входит в образовательную программу?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Какие развивающие мероприятия проводятся?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Обратная связь с воспитателем и управлением сада?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Какие средства гигиены и ухода в детском саду?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
-                    <details class="spollers__item">
-                        <summary class="spollers__title">Есть ли отчеты об успеваемости ребенка?</summary>
-                        <div class="spollers__body">Безопасность детей очень важна для нас. </div>
-                    </details>
+					@foreach (questions() as $question)
+						<details class="spollers__item">
+							<summary class="spollers__title">{{ $question->question }}</summary>
+							<div class="spollers__body">{{ $question->answer }}</div>
+						</details>
+					@endforeach
                 </div>
 			</div>
 		</section>

@@ -4,6 +4,7 @@ use App\Models\AdditionalClass;
 use App\Models\Photo;
 use App\Models\Price;
 use App\Models\Promotion;
+use App\Models\Question;
 use App\Models\Review;
 use App\Models\Worker;
 use Illuminate\Database\Eloquent\Collection;
@@ -89,5 +90,19 @@ if (! function_exists('promotions')) {
         }
 
         return $promotions;
+    }
+}
+
+if (! function_exists('questions')) {
+    function questions(): Collection
+    {
+        if (cache()->has('questions')) {
+            $questions = cache()->get('questions');
+        } else {
+            $questions = Question::all();
+            cache()->put('questions', $questions, now()->addDay());
+        }
+
+        return $questions;
     }
 }

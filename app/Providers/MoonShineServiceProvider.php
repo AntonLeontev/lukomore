@@ -9,6 +9,7 @@ use App\MoonShine\Resources\PhotoResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\PriceResource;
 use App\MoonShine\Resources\PromotionResource;
+use App\MoonShine\Resources\QuestionResource;
 use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\WorkerResource;
 use Closure;
@@ -84,6 +85,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 'Спецпредложения',
                 new PromotionResource()
             )->icon('heroicons.currency-dollar'),
+            MenuItem::make(
+                'Вопросы и ответы',
+                new QuestionResource()
+            )->icon('heroicons.question-mark-circle'),
         ];
     }
 
