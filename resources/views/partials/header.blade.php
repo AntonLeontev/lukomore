@@ -55,9 +55,9 @@
 								<a href="{{ route('faq') }}" class="menu__link">Вопросы и ответы</a>
 							</li>
 						@endif
-						@if (Route::has('blog'))
-                        	<li class="menu__item @if(Route::currentRouteName() === 'blog') _active @endif">
-								<a href="{{ route('blog') }}" class="menu__link">Полезные статьи</a>
+						@if (Route::has('posts.index'))
+                        	<li class="menu__item @if(Route::currentRouteName() === 'posts.index') _active @endif">
+								<a href="{{ route('posts.index') }}" class="menu__link">Полезные статьи</a>
 							</li>
 						@endif
                         <li class="menu__item"><a href="#" class="menu__link" data-goto=".contacts">Контакты</a></li>
