@@ -28,34 +28,15 @@
             <div class="sale-page__container">
                 <div class="sale-page__sale sale-block _no-bg">
                     <ul class="sale-block__items">
-                        <li>
-                            Всё включено в&nbsp;стоимость абонемента
-                        </li>
-                        <li>
-                            Скидка 20% приведи друга
-                        </li>
-                        <li>
-                            Нет вступительных взносов и&nbsp;скрытых платежей
-                        </li>
-                        <li>
-                            Перерасчёт оплаты по&nbsp;болезни ребёнка
-                        </li>
-                        <li>
-                            Скидка 50% на&nbsp;второго ребёнка
-                        </li>
-                        <li>
-                            Специальные условия для многодетных семей
-                        </li>
-                        <li>
-                            Скидка 30% при переходе из&nbsp;другого частного детского сада
-                        </li>
-                        <li>
-                            Принимаем оплату материнским капиталом
-                        </li>
+						@foreach (promotions() as $promo)
+							<li>
+								{{ $promo->title }}
+							</li>
+						@endforeach
                     </ul>
-                    <div class="sale-block__actions">
+                    {{-- <div class="sale-block__actions">
                         <a href="" class="sale-block__btn button" data-goto=".feedback">Подробнее</a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="tariffs__free">
                     <h2 class="tariffs__title title">

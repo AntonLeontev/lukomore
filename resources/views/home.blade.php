@@ -499,30 +499,11 @@
                 <div class="tariffs__sale sale-block">
                     <div class="sale-block__title title">Акции и&nbsp;специальные предложения</div>
                     <ul class="sale-block__items">
-                        <li>
-                            Всё включено в&nbsp;стоимость абонемента
-                        </li>
-                        <li>
-                            Скидка 20% приведи друга
-                        </li>
-                        <li>
-                            Нет вступительных взносов и&nbsp;скрытых платежей
-                        </li>
-                        <li>
-                            Перерасчёт оплаты по&nbsp;болезни ребёнка
-                        </li>
-                        <li>
-                            Скидка 50% на&nbsp;второго ребёнка
-                        </li>
-                        <li>
-                            Специальные условия для многодетных семей
-                        </li>
-                        <li>
-                            Скидка 30% при переходе из&nbsp;другого частного детского сада
-                        </li>
-                        <li>
-                            Принимаем оплату материнским капиталом
-                        </li>
+                        @foreach (promotions() as $promo)
+							<li>
+								{{ $promo->title }}
+							</li>
+						@endforeach
                     </ul>
                     <div class="sale-block__actions">
                         <a href="{{ route('sale') }}" class="sale-block__btn button">Подробнее</a>

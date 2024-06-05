@@ -3,6 +3,7 @@
 use App\Models\AdditionalClass;
 use App\Models\Photo;
 use App\Models\Price;
+use App\Models\Promotion;
 use App\Models\Review;
 use App\Models\Worker;
 use Illuminate\Database\Eloquent\Collection;
@@ -74,5 +75,19 @@ if (! function_exists('reviews')) {
         }
 
         return $reviews;
+    }
+}
+
+if (! function_exists('promotions')) {
+    function promotions(): Collection
+    {
+        if (cache()->has('promotions')) {
+            $promotions = cache()->get('promotions');
+        } else {
+            $promotions = Promotion::all();
+            cache()->put('promotions', $promotions, now()->addDay());
+        }
+
+        return $promotions;
     }
 }
