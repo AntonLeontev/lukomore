@@ -1,11 +1,11 @@
 <?php
 
+use App\MoonShine\MoonShineLayout;
 use MoonShine\Exceptions\MoonShineNotFoundException;
 use MoonShine\Forms\LoginForm;
 use MoonShine\Http\Middleware\Authenticate;
 use MoonShine\Http\Middleware\SecurityHeadersMiddleware;
 use MoonShine\Models\MoonshineUser;
-use MoonShine\MoonShineLayout;
 use MoonShine\Pages\ProfilePage;
 
 return [
@@ -13,8 +13,8 @@ return [
     'namespace' => 'App\MoonShine',
 
     'title' => env('MOONSHINE_TITLE', 'Лукоморье'),
-    'logo' => env('MOONSHINE_LOGO'),
-    'logo_small' => env('MOONSHINE_LOGO_SMALL'),
+    'logo' => '/images/logo.svg',
+    'logo_small' => '/images/logo.svg',
 
     'route' => [
         'domain' => env('MOONSHINE_URL', ''),
@@ -57,7 +57,7 @@ return [
     ],
 
     'pages' => [
-        'dashboard' => App\MoonShine\Pages\Dashboard::class,
+        'dashboard' => App\MoonShine\Resources\PostResource::class,
         'profile' => ProfilePage::class,
     ],
 

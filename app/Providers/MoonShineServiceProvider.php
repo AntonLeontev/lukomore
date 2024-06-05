@@ -59,32 +59,31 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(
                 'Статьи',
                 new PostResource()
-            ),
+            )->icon('heroicons.book-open'),
             MenuItem::make(
                 'Цены',
                 new PriceResource()
-            ),
+            )->icon('heroicons.banknotes'),
             MenuItem::make(
                 'Галерея',
                 new PhotoResource()
-            ),
+            )->icon('heroicons.photo'),
             MenuItem::make(
                 'Доп занятия',
                 new AdditionalClassResource()
-            ),
+            )->icon('heroicons.squares-plus'),
             MenuItem::make(
                 'Команда',
                 new WorkerResource()
-            ),
+            )->icon('heroicons.users'),
             MenuItem::make(
                 'Отзывы',
                 new ReviewResource()
-            ),
+            )->icon('heroicons.book-open'),
             MenuItem::make(
                 'Спецпредложения',
                 new PromotionResource()
-            ),
-
+            )->icon('heroicons.currency-dollar'),
         ];
     }
 
