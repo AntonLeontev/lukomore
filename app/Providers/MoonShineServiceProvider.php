@@ -8,6 +8,7 @@ use App\MoonShine\Resources\AdditionalClassResource;
 use App\MoonShine\Resources\PhotoResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\PriceResource;
+use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\WorkerResource;
 use Closure;
 use MoonShine\Contracts\Resources\ResourceContract;
@@ -73,6 +74,14 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(
                 'Команда',
                 new WorkerResource()
+            ),
+            MenuItem::make(
+                'Отзывы',
+                new ReviewResource()
+            ),
+            MenuItem::make(
+                'Спецпредложения',
+                new ReviewResource()
             ),
 
         ];

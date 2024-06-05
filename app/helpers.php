@@ -3,6 +3,7 @@
 use App\Models\AdditionalClass;
 use App\Models\Photo;
 use App\Models\Price;
+use App\Models\Review;
 use App\Models\Worker;
 use Illuminate\Database\Eloquent\Collection;
 
@@ -59,5 +60,19 @@ if (! function_exists('team')) {
         }
 
         return $team;
+    }
+}
+
+if (! function_exists('reviews')) {
+    function reviews(): Collection
+    {
+        if (cache()->has('reviews')) {
+            $reviews = cache()->get('reviews');
+        } else {
+            $reviews = Review::all();
+            cache()->put('reviews', $reviews, now()->addDay());
+        }
+
+        return $reviews;
     }
 }

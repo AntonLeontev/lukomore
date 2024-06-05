@@ -586,96 +586,33 @@
                 <h2 class="reviews__title title">Отзывы</h2>
                 <div class="reviews__body swiper">
                     <div class="reviews__wrapper swiper-wrapper">
-                        <div class="reviews__slide swiper-slide">
-                            <div class="review-slide">
-                                <div class="review-slide__header">
-                                    <div class="review-slide__user">
-                                        <strong>Полина</strong>
-                                        <time>22.02.2024</time>
-                                    </div>
-                                    <div class="review-slide__rating rating">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="review-slide__body">
-                                    Спасибо большое всей команде Лукоморье, ребенку очень нравится он каждое утро идет в
-                                    садик с удовольствием - а это я считаю самым главным.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slide swiper-slide">
-                            <div class="review-slide">
-                                <div class="review-slide__header">
-                                    <div class="review-slide__user">
-                                        <strong>Angela</strong>
-                                        <time>21.02.2024</time>
-                                    </div>
-                                    <div class="review-slide__rating rating">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="review-slide__body">
-                                    Спасибо большое всей команде Лукоморье, ребенку очень нравится он каждое утро идет в
-                                    садик с удовольствием - а это я считаю самым главным. В садике превосходные учителя
-                                    и очень насыщенные и интересные программы, мой сын стал более общительным и
-                                    открытым.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slide swiper-slide">
-                            <div class="review-slide">
-                                <div class="review-slide__header">
-                                    <div class="review-slide__user">
-                                        <strong>Ольга</strong>
-                                        <time>21.03.2024</time>
-                                    </div>
-                                    <div class="review-slide__rating rating">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="review-slide__body">
-                                    Спасибо большое всей команде Лукоморье, ребенку очень нравится он каждое утро идет в
-                                    садик с удовольствием - а это я считаю самым главным. В садике превосходные учителя
-                                    и очень насыщенные и интересные программы, мой сын стал более общительным и
-                                    открытым.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="reviews__slide swiper-slide">
-                            <div class="review-slide">
-                                <div class="review-slide__header">
-                                    <div class="review-slide__user">
-                                        <strong>Артем</strong>
-                                        <time>21.04.2024</time>
-                                    </div>
-                                    <div class="review-slide__rating rating">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
-                                        <img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
-                                    </div>
-                                </div>
-                                <div class="review-slide__body">
-                                    Спасибо большое всей команде Лукоморье, ребенку очень нравится он каждое утро идет в
-                                    садик с удовольствием - а это я считаю самым главным. В садике превосходные учителя
-                                    и очень насыщенные и интересные программы, мой сын стал более общительным и
-                                    открытым.
-                                </div>
-                            </div>
-                        </div>
+						@foreach (reviews() as $review)
+							<div class="reviews__slide swiper-slide">
+								<div class="review-slide">
+									<div class="review-slide__header">
+										<div class="review-slide__user">
+											<strong>{{ $review->name }}</strong>
+											<time>{{ $review->created_at->format('d.m.Y') }}</time>
+										</div>
+										<div class="review-slide__rating rating">
+											@foreach (range(1, $review->rating) as $time)
+												<img src="{{ Vite::asset('resources/img/icons/star-full.svg') }}" alt="Image">
+											@endforeach
+											
+											@foreach (range(0, 5 - $review->rating) as $time)
+												@if ($loop->last)
+													@continue
+												@endif
+												<img src="{{ Vite::asset('resources/img/icons/star-null.svg') }}" alt="Image">
+											@endforeach
+										</div>
+									</div>
+									<div class="review-slide__body">
+										{!! $review->text !!}
+									</div>
+								</div>
+							</div>
+						@endforeach
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-controls">
