@@ -11,6 +11,11 @@
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<script defer src="/js/app.min.js"></script>
 	@routes
+	<style>
+		[x-cloak] {
+			display: none !important;
+		}
+	</style>
 </head>
 
 <body>
