@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Photo;
 use App\Models\Price;
+use Illuminate\Database\Eloquent\Collection;
 
 if (! function_exists('price')) {
     function price(string $slug): Price
@@ -13,5 +15,19 @@ if (! function_exists('price')) {
         }
 
         return $prices->where('slug', $slug)->first();
+    }
+}
+
+if (! function_exists('gallary')) {
+    function gallary(): Collection
+    {
+        if (cache()->has('gallary')) {
+            $gallary = cache()->get('gallary');
+        } else {
+            $gallary = Photo::all();
+            cache()->put('gallary', $gallary, now()->addDay());
+        }
+
+        return $gallary;
     }
 }
