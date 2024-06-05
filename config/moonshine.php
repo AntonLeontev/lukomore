@@ -57,7 +57,7 @@ return [
     ],
 
     'pages' => [
-        'dashboard' => App\MoonShine\Resources\PostResource::class,
+        'dashboard' => App\MoonShine\Pages\Dashboard::class,
         'profile' => ProfilePage::class,
     ],
 
