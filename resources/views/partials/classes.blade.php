@@ -154,109 +154,21 @@
             <h2 class="dop-classes__title title">Дополнительные занятия</h2>
             <div class="dop-classes__body swiper">
                 <div class="dop-classes__wrapper swiper-wrapper">
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Мама и малыш
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Развивающие занятия «Мама и малыш» в&nbsp;частном детском саду «Лукоморье» <br>
-                                в центре
-                                Санкт-Петербурга.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/01.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Арт терапия
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Студия живописи для детей в&nbsp;частном детском саду «Лукоморье» в&nbsp;центре
-                                Санкт-Петербурга.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/02.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Конструирование
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Занятия по конструированию для детей в&nbsp;частном детском саду «Лукоморье»
-                                в&nbsp;центре
-                                Санкт-Петербурга. Обучение ребенка конструированию, знакомство малыша с деталями
-                                конструктора.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/03.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Подготовка к&nbsp;школе
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Студия живописи для детей в частном детском саду «Лукоморье» в центре
-                                Санкт-Петербурга.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/04.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Диагностика <br>
-                                подготовки к&nbsp;школе
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Студия живописи для детей в частном детском саду «Лукоморье» в центре
-                                Санкт-Петербурга.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/05.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Психолог и&nbsp;логопед
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Студия живописи для детей в частном детском саду «Лукоморье» в центре
-                                Санкт-Петербурга.
-                            </div>
-                            <div class="dop-classes-slide__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/slider/classes/06.jpg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dop-classes__slide swiper-slide">
-                        <div class="dop-classes-slide">
-                            <div class="dop-classes-slide__title title title_h3">
-                                Робототехника
-                            </div>
-                            <div class="dop-classes-slide__text">
-                                Кружок робототехники <br> для дошкольников в «Лукоморье». Программируем и
-                                запускаем
-                                роботов!
-                            </div>
-                            <div class="dop-classes-slide__img -ibg--contain">
-                                <img src="{{ Vite::asset('resources/img/logo-rob.svg') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
+					@foreach (additional_classes() as $class)
+						<div class="dop-classes__slide swiper-slide">
+							<div class="dop-classes-slide">
+								<div class="dop-classes-slide__title title title_h3">
+									{{ $class->title }}
+								</div>
+								<div class="dop-classes-slide__text">
+									{{ $class->preview_text }}
+								</div>
+								<div class="dop-classes-slide__img -ibg">
+									<img src="{{ $class->thumbnail_url }}" alt="{{ $class->title }}">
+								</div>
+							</div>
+						</div>
+					@endforeach
                 </div>
                 <div class="swiper-pagination"></div>
                 <div class="swiper-controls">

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
+use App\MoonShine\Resources\AdditionalClassResource;
 use App\MoonShine\Resources\PhotoResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\PriceResource;
@@ -63,6 +64,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(
                 'Галерея',
                 new PhotoResource()
+            ),
+            MenuItem::make(
+                'Доп занятия',
+                new AdditionalClassResource()
             ),
 
         ];
