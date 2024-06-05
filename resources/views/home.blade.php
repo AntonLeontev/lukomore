@@ -550,136 +550,29 @@
                 <h2 class="team__title title">Наша команда</h2>
                 <div class="team__body swiper">
                     <div class="team__wrapper swiper-wrapper">
-                        <div class="team__slide swiper-slide">
-                            <div class="team-slide">
-                                <div class="team-slide__img -ibg">
-                                    <img src="{{ Vite::asset('resources/img/slider/team/01.jpg') }}" alt="Image">
-                                </div>
-                                <div class="team-slide__body">
-                                    <div class="team-slide__title title title_h3">Варвара Крылова</div>
-                                    <div class="team-slide__category">
-                                        Воспитатель детей раннего возраста с&nbsp;ОВЗ
-                                    </div>
-                                    <div data-showmore class="text-team">
-                                        <div data-showmore-content="0" class="text-team__content">
-                                            <p>Люблю французский и азиатский кинематограф, увлекаюсь философией и
-                                                искусством 20 века. Когда меня спрашивают, зачем я пошла в педагогику, я
-                                                всегда отвечаю одно: дети - потрясающие! </p>
-                                            <p>
-                                                От своей работы я получаю большое удовольствие. Мне доставляет радость,
-                                                когда я вижу успехи учеников в их маленьких важных шагах. Через своих
-                                                воспитанников я изучаю себя, познаю мир снова и снова.
-                                            </p>
-                                        </div>
-                                        <button hidden data-showmore-button type="button"
-                                            class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team__slide swiper-slide">
-                            <div class="team-slide">
-                                <div class="team-slide__img -ibg">
-                                    <img src="{{ Vite::asset('resources/img/slider/team/02.jpg') }}" alt="Image">
-                                </div>
-                                <div class="team-slide__body">
-                                    <div class="team-slide__title title title_h3">Татьяна Цветкова</div>
-                                    <div class="team-slide__category">
-                                        Педагог - психолог
-                                    </div>
-                                    <div data-showmore class="text-team">
-                                        <div data-showmore-content="0" class="text-team__content">
-                                            <p>Люблю проводить время с семьёй, гулять в скверах и парках. Посещаю
-                                                театры, музеи и выставки. Очень люблю путешествовать и читать.</p>
-                                            <p>
-                                                Я открытый, доброжелательный и творческий человек, стремлюсь узнавать
-                                                что-то новое. Занятия выстраиваю в соответствии с личностными и
-                                                познавательными особенностями ребёнка, оказываю поддержку родителям.
-                                            </p>
-                                        </div>
-                                        <button hidden data-showmore-button type="button"
-                                            class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team__slide swiper-slide">
-                            <div class="team-slide">
-                                <div class="team-slide__img -ibg">
-                                    <img src="{{ Vite::asset('resources/img/slider/team/03.jpg') }}" alt="Image">
-                                </div>
-                                <div class="team-slide__body">
-                                    <div class="team-slide__title title title_h3">Яна Михайлова</div>
-                                    <div class="team-slide__category">
-                                        Младший воспитатель
-                                    </div>
-                                    <div data-showmore class="text-team">
-                                        <div data-showmore-content="0" class="text-team__content">
-                                            <p>
-                                                Я люблю читать книги, путешествовать.
-                                                С большой ответственностью подхожу к своей работе. Я терпелива и
-                                                тактична. Люблю детей и нахожу подход к каждому ребёнку.
-                                            </p>
-                                        </div>
-                                        <button hidden data-showmore-button type="button"
-                                            class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team__slide swiper-slide">
-                            <div class="team-slide">
-                                <div class="team-slide__img -ibg">
-                                    <img src="{{ Vite::asset('resources/img/slider/team/04.jpg') }}" alt="Image">
-                                </div>
-                                <div class="team-slide__body">
-                                    <div class="team-slide__title title title_h3">Чулпан Халирахманова</div>
-                                    <div class="team-slide__category">
-                                        Педагог - психолог
-                                    </div>
-                                    <div data-showmore class="text-team">
-                                        <div data-showmore-content="0" class="text-team__content">
-                                            <p>Я люблю рисовать, читать книги и мангу, смотреть аниме, увлекаюсь
-                                                японской культурой и изучаю языки.</p>
-                                            <p>
-                                                Своё обещание с детьми я строю на доверии, стараясь проявлять к каждому
-                                                ребёнку свой индивидуальный и неординарный подход.
-                                            </p>
-                                        </div>
-                                        <button hidden data-showmore-button type="button"
-                                            class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team__slide swiper-slide">
-                            <div class="team-slide">
-                                <div class="team-slide__img -ibg">
-                                    <img src="{{ Vite::asset('resources/img/slider/team/05.jpg') }}" alt="Image">
-                                </div>
-                                <div class="team-slide__body">
-                                    <div class="team-slide__title title title_h3">Екатерина Нерослова</div>
-                                    <div class="team-slide__category">
-                                        Повар, технолог, кулинар. Проводит кулинарный мастер-класс.
-                                    </div>
-                                    <div data-showmore class="text-team">
-                                        <div data-showmore-content="0" class="text-team__content">
-                                            <p>
-                                                Люблю готовить различные вкусняшки и радовать окружающих. Мне нравится
-                                                моя профессия. Очень радуюсь когда дети сытые и довольные.
-                                            </p>
-                                        </div>
-                                        <button hidden data-showmore-button type="button"
-                                            class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						@foreach (team() as $worker)
+							<div class="team__slide swiper-slide">
+								<div class="team-slide">
+									<div class="team-slide__img -ibg">
+										<img src="{{ $worker->url }}" alt="{{ $worker->name }}">
+									</div>
+									<div class="team-slide__body">
+										<div class="team-slide__title title title_h3">{{ $worker->name }}</div>
+										<div class="team-slide__category">
+											{{ $worker->profession }}
+										</div>
+										<div data-showmore class="text-team">
+											<div data-showmore-content="0" class="text-team__content">
+												{!! $worker->description !!}
+											</div>
+											<button hidden data-showmore-button type="button"
+												class="text-team__more"><span>Развернуть</span><span>Свернуть</span>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						@endforeach
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

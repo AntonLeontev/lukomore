@@ -3,6 +3,7 @@
 use App\Models\AdditionalClass;
 use App\Models\Photo;
 use App\Models\Price;
+use App\Models\Worker;
 use Illuminate\Database\Eloquent\Collection;
 
 if (! function_exists('price')) {
@@ -44,5 +45,19 @@ if (! function_exists('additional_classes')) {
         }
 
         return $classes;
+    }
+}
+
+if (! function_exists('team')) {
+    function team(): Collection
+    {
+        if (cache()->has('team')) {
+            $team = cache()->get('team');
+        } else {
+            $team = Worker::all();
+            cache()->put('team', $team, now()->addDay());
+        }
+
+        return $team;
     }
 }

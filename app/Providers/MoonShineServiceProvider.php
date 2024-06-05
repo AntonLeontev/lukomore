@@ -8,6 +8,7 @@ use App\MoonShine\Resources\AdditionalClassResource;
 use App\MoonShine\Resources\PhotoResource;
 use App\MoonShine\Resources\PostResource;
 use App\MoonShine\Resources\PriceResource;
+use App\MoonShine\Resources\WorkerResource;
 use Closure;
 use MoonShine\Contracts\Resources\ResourceContract;
 use MoonShine\Menu\MenuElement;
@@ -68,6 +69,10 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(
                 'Доп занятия',
                 new AdditionalClassResource()
+            ),
+            MenuItem::make(
+                'Команда',
+                new WorkerResource()
             ),
 
         ];
