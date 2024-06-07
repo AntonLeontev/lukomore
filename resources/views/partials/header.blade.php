@@ -86,7 +86,7 @@
                 <a href="https://vk.com/lukomorisad" target="_blank" class="social__item">
                     <img src="{{ Vite::asset('resources/img/icons/social/vk.svg') }}" alt="vk logo">
                 </a>
-                <a href="" target="_blank" class="social__item">
+                <a href="https://wa.me/+79291090808" target="_blank" class="social__item">
                     <img src="{{ Vite::asset('resources/img/icons/social/whatsapp.svg') }}" alt="whatsapp logo">
                 </a>
             </div>

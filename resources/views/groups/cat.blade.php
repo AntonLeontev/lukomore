@@ -12,7 +12,7 @@
                             Группа <br> Кот Ученый
                         </h1>
                         <div class="hero__text-normal">
-                            Для детей от 2 до 4 лет
+                            Для детей от 4 до 7 лет
                         </div>
                         <button class="hero__btn button" type="button" data-goto=".feedback">Уточнить наличие мест
                         </button>

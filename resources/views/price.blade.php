@@ -330,7 +330,7 @@
                     </div>
                 </div>
                 <div class="one-day">
-                    <h2 class="one-day__title title">Принимается оплату материнским капиталом</h2>
+                    <h2 class="one-day__title title">Принимается оплата материнским капиталом</h2>
                     <div class="one-day__img -ibg">
                         <img src="{{ Vite::asset('resources/img/one-day-img_price.jpg') }}" alt="Image">
                     </div>
