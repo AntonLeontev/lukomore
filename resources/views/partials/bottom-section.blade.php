@@ -92,9 +92,9 @@
             <a href="/license.pdf" target="_blank">Лицензия</a>
             <a href="" data-goto=".contacts">Где мы находимся</a>
         </div>
-        <div class="feedback__partners">
-            <a href="">Наши партнеры:</a>
+        <a href="https://robotohod.com/" rel="nofollow" class="feedback__partners">
+            <p>Наши партнеры:</p>
             <img src="{{ Vite::asset('resources/img/logo-rob.svg') }}" alt="Image">
-        </div>
+        </a>
     </div>
 </section>
