@@ -15,7 +15,7 @@
                 <a class="text" href="mailto:lukomoredeti@mail.ru">lukomoredeti@mail.ru</a>
             </div>
             <div class="header-top__col">
-                <button class="button button_outline" type="button" data-goto=".feedback">Обратный звонок</button>
+                <button class="button button_outline" type="button" data-popup data-form="">Обратный звонок</button>
             </div>
             <div class="header-top__col">
                 <button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -88,7 +88,11 @@
                 </a>
                 <a href="https://wa.me/+79291090808" target="_blank" class="social__item">
                     <img src="{{ Vite::asset('resources/img/icons/social/whatsapp.svg') }}" alt="whatsapp logo">
+					<sup>*</sup>
                 </a>
+				<small class="social__item _fs">
+					*Запрещен на территории РФ
+				</small>
             </div>
         </div>
     </div>

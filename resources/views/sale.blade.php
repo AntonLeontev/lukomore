@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Акции <span>и&nbsp;специальные предложения</span>
                         </h1>
-                        <button class="hero__btn button" type="button" data-goto=".feedback">Уточнить наличие мест</button>
+                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест</button>
                     </div>
                     <div class="hero__img hero-img _no-before">
                         <div class="hero-img__main">
@@ -35,7 +35,7 @@
 						@endforeach
                     </ul>
                     {{-- <div class="sale-block__actions">
-                        <a href="" class="sale-block__btn button" data-goto=".feedback">Подробнее</a>
+                        <a href="" class="sale-block__btn button" data-popup data-form="">Подробнее</a>
                     </div> --}}
                 </div>
                 <div class="tariffs__free">
@@ -47,7 +47,7 @@
                         вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                     </div>
                     <div class="tariffs__action">
-                        <button class="tariffs__btn button" type="button" data-goto=".feedback">Записаться</button>
+                        <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
                     </div>
                 </div>
                 <div class="one-day">

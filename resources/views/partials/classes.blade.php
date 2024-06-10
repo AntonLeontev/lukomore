@@ -101,6 +101,34 @@
                         физически развиваемся и тренируем ловкость и выносливость.
                     </div>
                 </li>
+
+                <li class="item-classes">
+                    <h3 class="item-classes__title title title_h3">
+                        «Конструирование»
+                    </h3>
+                    <div class="text text_l">
+                        развиваем пространственное мышление, чувство баланса, взаимопонимание.
+                    </div>
+                </li>
+                <li class="item-classes">
+                    <h3 class="item-classes__title title title_h3">
+                        «Кулинарный мастер-класс»
+                    </h3>
+                    <div class="text text_l">
+                        учимся готовить, знакомимся с различными продуктами и воспитываем здоровые привычки питания.
+                    </div>
+                </li>
+                <li class="item-classes">
+                    <h3 class="item-classes__title title title_h3">
+                        «Экспериментирование»
+                    </h3>
+                    <div class="text text_l">
+                        проводим научные опыты и интересные эксперименты.
+                    </div>
+                </li>
+
+
+
                 <li class="item-classes">
                     <h3 class="item-classes__title title title_h3">
                         «Музыкальные занятия и игры»

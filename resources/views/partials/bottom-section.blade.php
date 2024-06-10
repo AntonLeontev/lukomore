@@ -12,6 +12,8 @@
                 <h2 class="feedback__title title">У вас остались вопросы?</h2>
                 <div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
                 <form class="form" id="form">
+					<input type="hidden" name="page" value="@yield('title')">
+					<input type="hidden" name="form" value="Основная форма">
                     <div class="form__row">
                         <div class="form__line">
                             <input class="input" autocomplete="off" type="text" placeholder="Ваше имя" name="name" required maxlength="50">
@@ -38,29 +40,11 @@
                 </form>
 
 				<script>
-					let formWrapper = document.getElementById('formWrapper');
-					let button = formWrapper.querySelector('.form__button');
-					formWrapper.querySelector('#form').addEventListener('submit', submitForm);
-					formWrapper.querySelector('[name="phone"]').addEventListener('input', cleanPhone);
-
-					function submitForm(e) {
-						e.preventDefault();
-						button.disabled = true;
-
-						axios
-							.post(route('request.send'), new FormData(e.target))
-							.then((response) => {
-								formWrapper.classList.add('_form-success');
-							})
-							.catch((error) => {
-								alert('Произошла ошибка. Попробуйте позвонить нам');
-							});
-					}
-
-					function cleanPhone(e) {
-						e.target.value = e.target.value
-							.replace(/[^\d^+]/g, '')
-					}
+					document.addEventListener('DOMContentLoaded', function() {
+						let formWrapper = document.getElementById('formWrapper');
+						formWrapper.querySelector('#form').addEventListener('submit', submitForm);
+						formWrapper.querySelector('[name="phone"]').addEventListener('input', cleanPhone);
+					})
 				</script>
 
             </div>

@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Стоимость
                         </h1>
-                        <button class="hero__btn button" type="button" data-goto=".feedback">Уточнить наличие мест</button>
+                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест</button>
                     </div>
                     <div class="hero__img hero-img _no-before">
                         <div class="hero-img__main">
@@ -63,7 +63,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -106,7 +106,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -145,7 +145,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -184,7 +184,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -223,7 +223,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -267,7 +267,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-goto=".feedback">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -326,7 +326,7 @@
                         вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                     </div>
                     <div class="tariffs__action">
-                        <button class="tariffs__btn button" type="button" data-goto=".feedback">Записаться</button>
+                        <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
                     </div>
                 </div>
                 <div class="one-day">
