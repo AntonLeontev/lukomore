@@ -41,7 +41,6 @@
 
 				<script>
 					document.addEventListener('DOMContentLoaded', function() {
-						let formWrapper = document.getElementById('formWrapper');
 						formWrapper.querySelector('#form').addEventListener('submit', submitForm);
 						formWrapper.querySelector('[name="phone"]').addEventListener('input', cleanPhone);
 					})

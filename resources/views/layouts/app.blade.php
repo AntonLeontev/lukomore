@@ -33,9 +33,60 @@
 					<img src="{{ Vite::asset('resources/img/icons/close.svg') }}" alt="close">
 				</button>
 				<div class="popup__text">
+					<div class="form-wrapper">
+						<div class="form-success">
+							<div class="form-success__title title">Спасибо за вашу заявку!</div>
+							<div class="form-success__text">Мы Вам перезвоним в течение 30 минут</div>
+							<div class="form-success__img -ibg--contain">
+								<img src="{{ Vite::asset('resources/img/hero-cat_success.png') }}" alt="Image">
+							</div>
+						</div>
+						<div class="form-wrapper__content">
+							<h2 class="form-wrapper__title title">У вас остались вопросы?</h2>
+							<div class="form-wrapper__text text text_xl">Мы с удовольствием вам ответим!</div>
+							<form class="form" id="popupform">
+								<input type="hidden" name="page" value="@yield('title')">
+								<input type="hidden" name="form" value="" id="formType">
+
+								<div class="form__row">
+									<div class="form__line">
+										<input class="input" autocomplete="off" type="text" placeholder="Ваше имя" name="name" required>
+									</div>
+								</div>
+								<div class="form__row">
+									<div class="form__line">
+										<input class="input" autocomplete="off" type="text" placeholder="Ваш номер телефона" name="phone" required>
+									</div>
+									<div class="checkbox">
+										<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" required>
+										<label for="p_a" class="checkbox__label">
+											<span class="checkbox__text">
+												Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
+											</span>
+										</label>
+									</div>
+								</div>
+								<div class="form__row">
+									<button class="form__button button" type="submit">Оставить заявку</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+		{{-- <div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close" onclick="popup.classList.remove('popup_show')">
+					<img src="{{ Vite::asset('resources/img/icons/close.svg') }}" alt="close">
+				</button>
+				<div class="popup__text">
 					<h2 class="feedback__title title">У вас остались вопросы?</h2>
 					<div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
-					<form class="form" id="popupform">
+					<form class="form">
 						<input type="hidden" name="page" value="@yield('title')">
 						<input type="hidden" name="form" value="" id="formType">
 
@@ -63,7 +114,7 @@
 					</form>
 				</div>
 			</div>
-		</div>
+		</div> --}}
 	</div>
 
 	<script>
@@ -75,7 +126,7 @@
 				.post(route('request.send'), new FormData(e.target))
 				.then((response) => {
 					e.target.querySelector('.form__button').innerText = 'Заявка отправлена';
-					formWrapper.classList.add('_form-success');
+					e.target.closest('.form-wrapper').classList.add('_form-success');
 				})
 				.catch((error) => {
 					alert('Произошла ошибка. Попробуйте позвонить нам');
