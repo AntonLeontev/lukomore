@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Вопросы и&nbsp;ответы
                         </h1>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест
+                        <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест
                         </button>
                     </div>
                     <div class="hero__img hero-img _no-before">

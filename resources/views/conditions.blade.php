@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Условия приема
                         </h1>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест
+                        <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест
                         </button>
                     </div>
                     <div class="hero__img hero-img">
@@ -57,7 +57,7 @@
                         </li>
                     </ol>
                     <div class="conditions-page__action">
-                        <button class="conditions-page__btn button" type="button" data-popup data-form="">Оставить
+                        <button class="conditions-page__btn button" type="button" data-popup data-form="Оставить заявку">Оставить
                             заявку</button>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                         </div>
                         <div class="tariffs__action">
-                            <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
+                            <button class="tariffs__btn button" type="button" data-popup data-form="Записаться на бесплатный пробный день">Записаться</button>
                         </div>
                     </div>
                 </div>

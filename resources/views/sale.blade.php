@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Акции <span>и&nbsp;специальные предложения</span>
                         </h1>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест</button>
+                        <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест</button>
                     </div>
                     <div class="hero__img hero-img _no-before">
                         <div class="hero-img__main">
@@ -47,7 +47,7 @@
                         вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                     </div>
                     <div class="tariffs__action">
-                        <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
+                        <button class="tariffs__btn button" type="button" data-popup data-form="Записаться на бесплатный пробный день">Записаться</button>
                     </div>
                 </div>
                 <div class="one-day">

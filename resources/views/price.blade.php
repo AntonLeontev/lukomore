@@ -11,7 +11,7 @@
                         <h1 class="hero__title title">
                             Стоимость
                         </h1>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест</button>
+                        <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест</button>
                     </div>
                     <div class="hero__img hero-img _no-before">
                         <div class="hero-img__main">
@@ -63,7 +63,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('full_day')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -106,7 +106,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('half_full_day')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -145,7 +145,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('12_visits')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -184,7 +184,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('3_visits')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -223,7 +223,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('day')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -267,7 +267,7 @@
                                         </ul>
                                     </div>
                                     <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="">
+                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('half')->title }}">
                                             Оставить заявку
                                         </button>
                                     </div>
@@ -326,7 +326,7 @@
                         вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                     </div>
                     <div class="tariffs__action">
-                        <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
+                        <button class="tariffs__btn button" type="button" data-popup data-form="Записаться на бесплатный пробный день">Записаться</button>
                     </div>
                 </div>
                 <div class="one-day">

@@ -16,7 +16,7 @@
                             <li>Только свежие мясо, фрукты и овощи.</li>
                             <li>Каждый день мы сами готовим супчики, котлетки, запеканки и даже выпечку.</li>
                         </ul>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Уточнить наличие мест
+                        <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест
                         </button>
                     </div>
                     <div class="hero__img hero-img _no-before">
@@ -99,7 +99,7 @@
                     <span class="title_h3 title">На протяжении дня</span> дети пьют чистую бутилированную воду
                 </div>
                 <div class="food-about__action">
-                    <button class="food-about__btn button" type="button" data-popup data-form="">Уточнить наличие мест
+                    <button class="food-about__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест
                     </button>
                 </div>
             </div>

@@ -12,7 +12,7 @@
                         <h1 class="hero__title title _no-span">
                             Режим дня
                         </h1>
-                        <button class="hero__btn button" type="button" data-popup data-form="">Записаться на экскурсию</button>
+                        <button class="hero__btn button" type="button" data-popup data-form="Записаться на экскурсию">Записаться на экскурсию</button>
                     </div>
                     <div class="hero__img hero-img _no-before">
                         <div class="hero-img__main">
@@ -651,7 +651,7 @@
                         вместе&nbsp;с ребенком на <span>бесплатный пробный день</span>
                     </div>
                     <div class="tariffs__action">
-                        <button class="tariffs__btn button" type="button" data-popup data-form="">Записаться</button>
+                        <button class="tariffs__btn button" type="button" data-popup data-form="Записаться на бесплатный пробный день">Записаться</button>
                     </div>
                 </div>
             </div>
