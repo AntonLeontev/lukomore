@@ -28,7 +28,7 @@
                                 value="1" name="check" required>
                             <label for="c_" class="checkbox__label">
                                 <span class="checkbox__text">
-                                    Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой
+                                    Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="/policy.pdf" target="_blank" target="_blank">политикой
                                         конфиденциальности</a>.
                                 </span>
                             </label>

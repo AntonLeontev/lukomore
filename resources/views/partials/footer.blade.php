@@ -6,7 +6,7 @@
         <a href="/" class="footer__logo logo"><img src="{{ Vite::asset('resources/img/logo.svg') }}" alt="Logo"></a>
         <div class="footer__link">
             <a href="/license.pdf" target="_blank">Лицензия</a>
-            <a href="">Политика конфиденциальности</a>
+            <a href="/policy.pdf" target="_blank">Политика конфиденциальности</a>
             <div class="footer__text">
                 © 2024 Частный детский сад “Лукоморье”
             </div>

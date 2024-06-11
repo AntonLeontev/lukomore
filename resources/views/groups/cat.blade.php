@@ -593,68 +593,7 @@
             </div>
         </section>
 
-        <section class="feedback section-bottom">
-            <div class="feedback__container">
-                <div class="feedback__form form-wrapper">
-                    <div class="form-success">
-                        <div class="form-success__title title">Спасибо за вашу заявку!</div>
-                        <div class="form-success__text">Мы Вам перезвоним в течение 30 минут</div>
-                        <div class="form-success__img -ibg--contain">
-                            <img src="{{ Vite::asset('resources/img/hero-cat_success.png') }}" alt="Image">
-                        </div>
-                    </div>
-                    <div class="form-wrapper__content">
-                        <h2 class="feedback__title title">У вас остались вопросы?</h2>
-                        <div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
-                        <form action="" class="form">
-                            <div class="form__row">
-                                <div class="form__line">
-                                    <input class="input" autocomplete="off" type="text" placeholder="Ваше имя">
-                                </div>
-                            </div>
-                            <div class="form__row">
-                                <div class="form__line">
-                                    <input class="input" autocomplete="off" type="text"
-                                        placeholder="Ваш номер телефона">
-                                </div>
-                                <div class="checkbox">
-                                    <input id="c_" data-error="Ошибка" class="checkbox__input" checked
-                                        type="checkbox" value="1" name="form[]">
-                                    <label for="c_" class="checkbox__label">
-                                        <span class="checkbox__text">
-                                            Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a
-                                                href="">политикой конфиденциальности</a>.
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form__row">
-                                <button class="form__button button" type="submit">Оставить заявку</button>
-                            </div>
-                        </form>
-                    </div>
-
-                </div>
-                <div class="feedback__contacts">
-                    <a href="tel:+79291090808">+7 929 109 08 08</a>
-                    <a href="mailto:lukomoredeti@mail.ru">lukomoredeti@mail.ru</a>
-                </div>
-                <div class="feedback__navigation">
-                    <a href="">Наш подход</a>
-                    <a href="">Питание</a>
-                    <a href="">Группы</a>
-                    <a href="">Тарифы</a>
-                    <a href="">Отзывы</a>
-                    <a href="">Условия приема</a>
-                    <a href="">Лицензия</a>
-                    <a href="">Где мы находимся</a>
-                </div>
-                <div class="feedback__partners">
-                    <a href="">Наши партнеры:</a>
-                    <img src="{{ Vite::asset('resources/img/logo-rob.svg') }}" alt="Image">
-                </div>
-            </div>
-        </section>
+        @include('partials.bottom-section')
 
         @include('partials.contacts')
     </main>

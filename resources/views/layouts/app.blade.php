@@ -61,7 +61,7 @@
 										<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" required>
 										<label for="p_a" class="checkbox__label">
 											<span class="checkbox__text">
-												Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
+												Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="/policy.pdf">политикой конфиденциальности</a>.
 											</span>
 										</label>
 									</div>
@@ -75,46 +75,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-		{{-- <div class="popup__wrapper">
-			<div class="popup__content">
-				<button data-close type="button" class="popup__close" onclick="popup.classList.remove('popup_show')">
-					<img src="{{ Vite::asset('resources/img/icons/close.svg') }}" alt="close">
-				</button>
-				<div class="popup__text">
-					<h2 class="feedback__title title">У вас остались вопросы?</h2>
-					<div class="feedback__text text text_xl">Мы с удовольствием вам ответим!</div>
-					<form class="form">
-						<input type="hidden" name="page" value="@yield('title')">
-						<input type="hidden" name="form" value="" id="formType">
-
-						<div class="form__row">
-							<div class="form__line">
-								<input class="input" autocomplete="off" type="text" placeholder="Ваше имя" name="name" required>
-							</div>
-						</div>
-						<div class="form__row">
-							<div class="form__line">
-								<input class="input" autocomplete="off" type="text" placeholder="Ваш номер телефона" name="phone" required>
-							</div>
-							<div class="checkbox">
-								<input id="p_a" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" required>
-								<label for="p_a" class="checkbox__label">
-									<span class="checkbox__text">
-										Оставляя свои контактные данные, Вы соглашаетесь с&nbsp;<a href="">политикой конфиденциальности</a>.
-									</span>
-								</label>
-							</div>
-						</div>
-						<div class="form__row">
-							<button class="form__button button" type="submit">Оставить заявку</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div> --}}
 	</div>
 
 	<script>
