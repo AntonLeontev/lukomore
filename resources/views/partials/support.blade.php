@@ -23,7 +23,7 @@
             <a href="https://vk.com/lukomorisad" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/vk.svg') }}" alt="Image">
             </a>
-            <a href="" class="social__item">
+            <a href="https://wa.me/+79291090808" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/whatsapp.svg') }}" alt="Image"><sup>*</sup>
             </a>
             <a href="https://wa.me/+79291090808" class="social__item _fs">
