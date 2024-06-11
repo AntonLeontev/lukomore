@@ -17,16 +17,16 @@
         </div>
 
         <div class="support__social social">
-            <a href="" class="social__item">
+            <a href="https://t.me/lukomoriesad" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/telegram.svg') }}" alt="Image">
             </a>
-            <a href="" class="social__item">
+            <a href="https://vk.com/lukomorisad" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/vk.svg') }}" alt="Image">
             </a>
             <a href="" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/whatsapp.svg') }}" alt="Image"><sup>*</sup>
             </a>
-            <a href="" class="social__item _fs">
+            <a href="https://wa.me/+79291090808" class="social__item _fs">
                 <small>*Запрещен на территории РФ</small>
             </a>
         </div>
