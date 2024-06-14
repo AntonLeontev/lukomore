@@ -84,11 +84,11 @@
                         <div class="video-block__value">
                             <div class="video-block__inner">
                                 <picture>
-                                    <source srcset='https:\\img.youtube.com/vi_webp/Sd3wSFnM3Ik/maxresdefault.webp'
+                                    <source srcset='https:\\img.youtube.com/vi_webp/IilmExnNBoc/maxresdefault.webp'
                                         type="image/webp">
-                                    <img src="https:\\img.youtube.com/vi/Sd3wSFnM3Ik/maxresdefault.jpg" alt="Image">
+                                    <img src="https:\\img.youtube.com/vi/IilmExnNBoc/maxresdefault.jpg" alt="Image">
                                 </picture>
-                                <button class="video-btn" type="button" data-video-id="Sd3wSFnM3Ik">
+                                <button class="video-btn" type="button" data-video-id="IilmExnNBoc">
                                     <svg width="100%" height="100%" viewBox="0 0 70 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -103,11 +103,11 @@
                         <div class="video-block__value">
                             <div class="video-block__inner">
                                 <picture>
-                                    <source srcset='https:\\img.youtube.com/vi_webp/Sd3wSFnM3Ik/maxresdefault.webp'
+                                    <source srcset='https:\\img.youtube.com/vi_webp/UBS_njtSkeg/maxresdefault.webp'
                                         type="image/webp">
-                                    <img src="https:\\img.youtube.com/vi/Sd3wSFnM3Ik/maxresdefault.jpg" alt="Image">
+                                    <img src="https:\\img.youtube.com/vi/UBS_njtSkeg/maxresdefault.jpg" alt="Image">
                                 </picture>
-                                <button class="video-btn" type="button" data-video-id="Sd3wSFnM3Ik">
+                                <button class="video-btn" type="button" data-video-id="UBS_njtSkeg">
                                     <svg width="100%" height="100%" viewBox="0 0 70 75" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
