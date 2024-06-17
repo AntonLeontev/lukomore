@@ -46,7 +46,7 @@
                         <small>*Запрещен на территории РФ</small>
                     </p>
                 </div>
-                <div class="video-contacts">
+                {{-- <div class="video-contacts">
                     <div class="video-contacts__text">Как нас найти? <br> Смотрите видео:</div>
                     <a href="" class="video-contacts__btn">
                         <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
@@ -56,7 +56,7 @@
                                 fill="white" />
                         </svg>
                     </a>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>
