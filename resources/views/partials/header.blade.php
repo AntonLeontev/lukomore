@@ -55,11 +55,11 @@
 								<a href="{{ route('faq') }}" class="menu__link">Вопросы и ответы</a>
 							</li>
 						@endif
-						@if (Route::has('posts.index'))
+						{{-- @if (Route::has('posts.index'))
                         	<li class="menu__item @if(Route::currentRouteName() === 'posts.index') _active @endif">
 								<a href="{{ route('posts.index') }}" class="menu__link">Полезные статьи</a>
 							</li>
-						@endif
+						@endif --}}
                         <li class="menu__item"><a href="#" class="menu__link" data-goto=".contacts">Контакты</a></li>
                     </ul>
                     <div class="menu__mobile mobile-menu">
