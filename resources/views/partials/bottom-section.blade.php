@@ -73,7 +73,7 @@
 
             <a href="{{ route('conditions') }}">Условия приема</a>
             <a href="/license.pdf" target="_blank">Лицензия</a>
-            <a href="" data-goto=".contacts">Где мы находимся</a>
+            <a href="" data-goto=".where">Где мы находимся</a>
         </div>
         <a href="https://robotohod.com/" rel="nofollow" class="feedback__partners">
             <p>Наши партнеры:</p>
