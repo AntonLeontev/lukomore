@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Режим дня')
+@section('title', 'Программы и расписание в частном детском саде «Лукоморье»')
+@section('description', 'Возрастные группы нашего детского садика. Группы «Котята» - для детей с 2 до 3,5 лет и «Кот учёный» для детей с 4 до 6 лет. Распорядок дня! Звоните +7 (929) 109-08-08!')
 
 @section('content')
     <main class="page page_regime">
@@ -10,7 +11,7 @@
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="hero__title title _no-span">
-                            Режим дня
+                            Программы и расписание
                         </h1>
                         <button class="hero__btn button" type="button" data-popup data-form="Записаться на экскурсию">Записаться на экскурсию</button>
                     </div>

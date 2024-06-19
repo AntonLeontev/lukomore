@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'О нас')
+@section('title', 'Частный детский сад «Лукоморье»')
+@section('description', 'Лукоморье - частный детский сад с лицензией на оказание образовательных услуг. Мы находимся в Центральном районе Санкт-Петербурга, по ул. Маяковского, 37 В. Звоните +7 (929) 109-08-08!')
 
 @section('content')
     <main class="page page_about">
@@ -9,8 +10,7 @@
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="hero__title title">
-                            <span>Частный детский сад</span>
-                            «Лукоморье»
+                            О нас
                         </h1>
                         <div class="hero__text">
                             Мягкое и бережное развитие Вашего ребенка

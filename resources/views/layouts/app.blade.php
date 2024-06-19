@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
 
 <head>
-	<title>@yield('title') | Лукоморье</title>
+	<title>@yield('title')</title>
 	<meta charset="UTF-8">
+	<meta name="description" content="@yield('description')">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<meta name="robots" content="noindex, nofollow">
+	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta property="og:title" content="@yield('title')">
+	<meta property="og:description" content="@yield('description')">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="{{ url()->current() }}">
+	{{-- <meta property="og:image" content="@yield('image')"> --}}
+
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<script defer src="/js/app.min.js"></script>
 	@routes

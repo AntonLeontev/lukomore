@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Цены')
+@section('title', 'Цены на частный детский сад в Санкт-Петербурге, сколько стоит платный детский садик «Лукоморье» в месяц')
+@section('description', 'Стоимость частного детского сада «Лукоморье» в Санкт-Петербурге. Цены на полный и неполный день, дополнительные развивающие занятия в месяц. Звоните +7 (929) 109-08-08!')
 
 @section('content')
     <main class="page page_price">
@@ -9,7 +10,7 @@
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="hero__title title">
-                            Стоимость
+                            Стоимость пребывания в частном саду «Лукоморье» в {{ date('Y') }}
                         </h1>
                         <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест</button>
                     </div>

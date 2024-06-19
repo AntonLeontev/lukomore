@@ -5,17 +5,17 @@ use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'home')->name('home');
-Route::view('/about', 'about')->name('about');
-Route::view('/schedule', 'schedule')->name('schedule');
-Route::view('/price', 'price')->name('price');
-Route::view('/conditions', 'conditions')->name('conditions');
+Route::view('/o-nas', 'about')->name('about');
+Route::view('/programmy-raspisanie', 'schedule')->name('schedule');
+Route::view('/stoimost', 'price')->name('price');
+Route::view('/usloviya-priyema', 'conditions')->name('conditions');
 Route::view('/faq', 'faq')->name('faq');
 Route::view('/groups/kittens', 'groups.kittens')->name('groups.kittens');
 Route::view('/groups/cat', 'groups.cat')->name('groups.cat');
-Route::view('/additional', 'additional')->name('additional');
+Route::view('/zanyatiya', 'additional')->name('additional');
 Route::view('/sale', 'sale')->name('sale');
-Route::view('/mother-capital', 'mothers-cap')->name('mothers-cap');
-Route::view('/food', 'food')->name('food');
+Route::view('/materinskiy-kapital', 'mothers-cap')->name('mothers-cap');
+Route::view('/menu', 'food')->name('food');
 
 Route::controller(PostController::class)
     ->group(function () {
