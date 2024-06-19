@@ -33,4 +33,4 @@ host('81.177.139.224')
 
 after('deploy:failed', 'deploy:unlock');
 after('deploy:vendors', 'build');
-after('deploy:success', 'reboot');
+// after('deploy:success', 'reboot');
