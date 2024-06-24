@@ -52,4 +52,12 @@ class QuestionResource extends ModelResource
             'answer' => ['required', 'string', 'max:1000'],
         ];
     }
+
+    protected function resolveOrder(): static
+    {
+        $this->query()
+            ->orderBy('id', 'asc');
+
+        return $this;
+    }
 }

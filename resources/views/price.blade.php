@@ -10,7 +10,7 @@
                 <div class="hero__inner">
                     <div class="hero__content">
                         <h1 class="hero__title title">
-                            Стоимость пребывания в частном саду «Лукоморье» в {{ date('Y') }}
+                            Стоимость
                         </h1>
                         <button class="hero__btn button" type="button" data-popup data-form="Уточнить наличие мест">Уточнить наличие мест</button>
                     </div>

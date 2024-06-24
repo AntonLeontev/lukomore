@@ -54,6 +54,16 @@
                     </p>
                 </div>
                 <h2 class="food-about__title title">Пример детского меню на&nbsp;1&nbsp;день</h2>
+				<style>
+					.food-about__items  ul li{
+						font-size: 1.5rem;
+					}
+					@media screen and (max-width: 479.98px) {
+						.food-about__items  ul li{
+							font-size: 1.2rem;
+						}
+					}
+				</style>
                 <div class="food-about__items">
                     <div class="item-food">
                         <div class="item-food__title title title_h3">

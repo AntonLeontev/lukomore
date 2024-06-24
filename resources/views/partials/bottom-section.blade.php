@@ -54,7 +54,11 @@
             <a href="mailto:lukomoredeti@mail.ru">lukomoredeti@mail.ru</a>
         </div>
         <div class="feedback__navigation">
-            <a href="{{ route('about') }}">Наш подход</a>
+			@if (Route::currentRouteName() === 'home')
+				<a href="" data-goto=".about">Наш подход</a>
+			@else
+				<a href="/#our-approach">Наш подход</a>
+			@endif
             <a href="{{ route('food') }}">Питание</a>
 
 			@if (Route::currentRouteName() === 'home')

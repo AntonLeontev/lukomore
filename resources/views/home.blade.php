@@ -49,7 +49,7 @@
                 </div>
             </div>
         </section>
-        <section class="about section-padding">
+        <section class="about section-padding" id="our-approach">
             <div class="about__container">
                 <div class="about__item">
                     <h2 class="about__title title">

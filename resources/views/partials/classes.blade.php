@@ -208,9 +208,9 @@
                     </button>
                 </div>
             </div>
-            <div class="dop-classes__more">
+            {{-- <div class="dop-classes__more">
                 <a href="{{ route('additional') }}" class="dop-classes__btn button">Подробнее</a>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
