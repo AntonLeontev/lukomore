@@ -80,7 +80,7 @@
                 </nav>
             </div>
             <div class="header-bottom__social social" data-da=".menu__mobile, 991.98,last">
-                <a href="https://t.me/lukomoriesad" target="_blank" class="social__item">
+                <a href="https://t.me/lukomoredeti" target="_blank" class="social__item">
                     <img src="{{ Vite::asset('resources/img/icons/social/telegram.svg') }}" alt="telegram logo">
                 </a>
                 <a href="https://vk.com/lukomorisad" target="_blank" class="social__item">

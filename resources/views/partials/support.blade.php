@@ -17,7 +17,7 @@
         </div>
 
         <div class="support__social social">
-            <a href="https://t.me/lukomoriesad" target="_blank" class="social__item">
+            <a href="https://t.me/lukomoredeti" target="_blank" class="social__item">
                 <img src="{{ Vite::asset('resources/img/icons/social/telegram.svg') }}" alt="Image">
             </a>
             <a href="https://vk.com/lukomorisad" target="_blank" class="social__item">
