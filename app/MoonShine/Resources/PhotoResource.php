@@ -33,9 +33,7 @@ class PhotoResource extends ModelResource
     public function fields(): array
     {
         return [
-            Block::make([
-                Text::make('Подпись', 'title')
-                    ->required(),
+            Block::make([Text::make('Подпись', 'title'),
                 Image::make('Фото', 'path')
                     ->accept('image/*')
                     ->dir('gallary'),
@@ -52,7 +50,7 @@ class PhotoResource extends ModelResource
     public function rules(Model $item): array
     {
         return [
-            'title' => ['required', 'string', 'max:255'],
+            'title' => ['nullable', 'string', 'max:255'],
             'path' => ['required', 'image', 'max:1024'],
         ];
     }
