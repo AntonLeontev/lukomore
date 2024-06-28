@@ -49,7 +49,9 @@
 	<div class="wrapper">
 		@include('partials.header')
 		@yield('content')
-		@include('partials.footer')
+		@if (Route::currentRouteName() !== null)
+			@include('partials.footer')
+		@endif
 	</div>
 
 	{{-- popup_show --}}
