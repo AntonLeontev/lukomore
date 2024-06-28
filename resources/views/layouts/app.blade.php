@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="@yield('description')">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
