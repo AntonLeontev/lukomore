@@ -4,6 +4,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
+Route::redirect('index.php', '/', 301);
+
 Route::view('/', 'home')->name('home');
 Route::view('/o-nas', 'about')->name('about');
 Route::view('/programmy-raspisanie', 'schedule')->name('schedule');
@@ -16,7 +18,6 @@ Route::view('/zanyatiya', 'additional')->name('additional');
 Route::view('/sale', 'sale')->name('sale');
 Route::view('/materinskiy-kapital', 'mothers-cap')->name('mothers-cap');
 Route::view('/menu', 'food')->name('food');
-Route::redirect('index.php', '/');
 
 Route::controller(PostController::class)
     ->group(function () {
