@@ -16,6 +16,7 @@ Route::view('/zanyatiya', 'additional')->name('additional');
 Route::view('/sale', 'sale')->name('sale');
 Route::view('/materinskiy-kapital', 'mothers-cap')->name('mothers-cap');
 Route::view('/menu', 'food')->name('food');
+Route::redirect('index.php', '/');
 
 Route::controller(PostController::class)
     ->group(function () {
