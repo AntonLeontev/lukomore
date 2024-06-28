@@ -22,7 +22,7 @@
                         <img class="hero-cat" src="{{ Vite::asset('resources/img/hero-cat_cats.svg') }}" alt="Image">
                         <div class="hero-img__main">
                             <div class="hero-img__img -ibg">
-                                <img src="{{ Vite::asset('resources/img/pages/hero-img_cats.jpg') }}" alt="Image">
+                                <img src="{{ Vite::asset('resources/img/pages/kittens.webp') }}" alt="Image">
                             </div>
                         </div>
                     </div>

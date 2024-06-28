@@ -106,7 +106,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="food-about__accent text text_xl">
+                <div class="food-about__accent text text_xl" style="font-weight: 400">
                     <span class="title_h3 title">На протяжении дня</span> дети пьют чистую бутилированную воду
                 </div>
                 <div class="food-about__action">

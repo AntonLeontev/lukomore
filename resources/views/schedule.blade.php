@@ -545,14 +545,20 @@
 						<style>
 							.one-day__text p {
 								margin-bottom: 20px;
+								text-indent: 40px;
 							}
 							.one-day__text .green {
 								font-family: "Lifehack", sans-serif;
 								color: #09805D;
 								font-size: 1.7rem;
 							}
+							@media screen and (max-width: 479.98px) {
+								.one-day__text .green {
+									font-size: 1.5rem;
+								}
+							}
 						</style>
-						<div class="one-day__text text text_xl">
+						<div class="one-day__text text tariffs__text" style="text-align: justify; max-width: 100%;">
 							<p><span class="green">Каждый день «Лукоморье»</span> открывает свои двери в 8:00.</p>
 							<p> <span class="green">Утренний приём</span> начинается с радостного приветствия воспитателя с детьми. Наши
 								воспитанники с удовольствием играют в центрах активностей в ожидании дальнейших занятий
@@ -572,7 +578,7 @@
 								изучать языки в будущем и развивает фонематический слух - это способствует лучшему
 								усвоению русского языка.</p>
 						</div>
-						<div data-showmore-content="0" class="one-day__text text_xl text">
+						<div data-showmore-content="0" class="one-day__text text_xl text" style="text-align: justify; max-width: 100%;">
 							<p>После активной зарядки мы <span class="green">пополняем свои силы питательным завтраком</span>. Нам важно, чтобы
 								дети кушали с аппетитом. Мы предоставляем ребёнку выбор из нескольких блюд. В
 								результате, что ребенок выбрал сам, он будет кушать с большим удовольствием.</p>
@@ -647,7 +653,7 @@
 						</button>
 					</div>
                     <div class="one-day__img -ibg">
-                        <img src="{{ Vite::asset('resources/img/one-day-img.jpg') }}" alt="Image">
+                        <img src="{{ Vite::asset('resources/img/pages/schedule.webp') }}" alt="Image">
                     </div>
                     {{-- <a href="" class="one-day__btn button">Подробнее</a> --}}
                 </div>
