@@ -33,7 +33,8 @@ class PhotoResource extends ModelResource
     public function fields(): array
     {
         return [
-            Block::make([Text::make('Подпись', 'title'),
+            Block::make([
+                Text::make('Подпись', 'title'),
                 Image::make('Фото', 'path')
                     ->accept('image/*')
                     ->dir('gallary'),
