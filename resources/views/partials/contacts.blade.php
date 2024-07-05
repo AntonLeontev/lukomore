@@ -23,7 +23,6 @@
                     <li>ПН - ПТ с 08:00 до 19:00</li>
                 </ul>
                 <ul class="contact-item">
-                    <li><a href="tel:+78123892209">+7 (812) 389-22-09</a></li>
                     <li><a href="tel:+79291090808">+7 (929) 109-08-08</a></li>
                 </ul>
                 <ul class="contact-item">
