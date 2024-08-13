@@ -23,7 +23,10 @@ class PostController extends Controller
     public function show(Post $post)
     {
         $post->increment('views');
+        $relatedPosts = Post::orderByDesc('id')
+            ->take(5)
+            ->get();
 
-        return view('posts.show', compact('post'));
+        return view('posts.show', compact('post', 'relatedPosts'));
     }
 }
