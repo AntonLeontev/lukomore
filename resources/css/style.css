@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&display=swap);
-
 @charset "UTF-8";
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,600,700&display=swap);
 
 @font-face {
   font-family: Lifehack;
@@ -929,7 +929,7 @@ textarea.input {
 .contacts__social .social {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3.75rem)[3];
+  -ms-grid-columns: (3.75rem);
   grid-template-columns: repeat(3, 3.75rem);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -6143,7 +6143,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .social.support__social,
   .contacts__social .social {
-    -ms-grid-columns: (3.125rem)[3];
+    -ms-grid-columns: (3.125rem);
     grid-template-columns: repeat(3, 3.125rem);
   }
 
@@ -6369,7 +6369,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .social.support__social,
   .contacts__social .social {
-    -ms-grid-columns: (2.5rem)[3];
+    -ms-grid-columns: (2.5rem);
     grid-template-columns: repeat(3, 2.5rem);
   }
 

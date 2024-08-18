@@ -1,0 +1,38 @@
+.post-text h1 {
+	font-family: "Lifehack", sans-serif;
+}
+.post-text h2 {
+	margin-bottom: 2rem;
+	font-size: 2.2rem;
+	font-family: "Lifehack", sans-serif;
+	color: var(--secondary);
+	text-align: center;
+}
+.post-text h3 {
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-family: "Lifehack", sans-serif;
+	color: var(--secondary);
+	text-align: center;
+}
+.post-text h4 {
+	margin-bottom: .5rem;
+	font-size: 1.3rem;
+	font-family: "Lifehack", sans-serif;
+	color: var(--secondary);
+	text-align: center;
+}
+.post-text h5 {
+	margin-bottom: .2rem;
+	font-size: 1.2rem;
+	font-family: "Lifehack", sans-serif;
+	color: var(--secondary);
+	text-align: center;
+}
+.post-text h6 {
+	margin-bottom: .2rem;
+	font-size: 1.1rem;
+	font-family: "Lifehack", sans-serif;
+	color: var(--secondary);
+	text-align: center;
+}

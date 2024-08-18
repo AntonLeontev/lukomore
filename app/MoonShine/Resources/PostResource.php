@@ -45,7 +45,7 @@ class PostResource extends ModelResource
                     ->required(),
                 TinyMce::make('Текст', 'text')
                     ->menubar('')
-                    ->toolbar('undo redo | bold italic underline | fontfamily fontsize lineheight | bullist numlist | table | alignleft aligncenter alignright | subscript superscript | removeformat')
+                    ->toolbar('undo redo | bold italic underline strikethrough | fontsize styles lineheight | bullist numlist | table | alignleft aligncenter alignright | link | subscript superscript | removeformat image code')
                     ->required()
                     ->hideOnIndex(),
                 Text::make('Автор', 'author')
@@ -63,6 +63,13 @@ class PostResource extends ModelResource
                     ->dir('posts'),
                 Textarea::make('Текст на превью', 'preview_text')
                     ->hint('Если оставить пустым, то будет сгенерирован из текста автоматически')
+                    ->hideOnIndex(),
+            ])->customAttributes(['class' => 'mb-6']),
+            Block::make('Метатеги', [
+                Text::make('Title', 'meta_title')
+                    ->required()
+                    ->hideOnIndex(),
+                Textarea::make('Description', 'meta_description')
                     ->hideOnIndex(),
             ]),
             Preview::make('Просмотры', 'views')

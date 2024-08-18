@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $post->title)
+@section('title', $post->meta_title)
+@section('description', $post->meta_description)
 
 @section('content')
     <main class="page">
@@ -11,7 +12,7 @@
                     <div class="template__img -ibg">
                         <img src="{{ $post->image_url }}" alt="{{ $post->title }}">
                     </div>
-                    <div class="text-block text text_l">
+                    <div class="text-block text text_l post-text">
                         {!! $post->text !!}
                     </div>
                 </div>
