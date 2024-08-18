@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 
 class TelegramService
 {
-    public function __construct(public TelegramApi $api)
-    {
-    }
+    public function __construct(public TelegramApi $api) {}
 
     public function sendRequest(Request $request)
     {

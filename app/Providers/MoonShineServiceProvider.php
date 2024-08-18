@@ -59,35 +59,35 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             // ]),
             MenuItem::make(
                 'Статьи',
-                new PostResource()
+                new PostResource
             )->icon('heroicons.book-open'),
             MenuItem::make(
                 'Цены',
-                new PriceResource()
+                new PriceResource
             )->icon('heroicons.banknotes'),
             MenuItem::make(
                 'Галерея',
-                new PhotoResource()
+                new PhotoResource
             )->icon('heroicons.photo'),
             MenuItem::make(
                 'Доп занятия',
-                new AdditionalClassResource()
+                new AdditionalClassResource
             )->icon('heroicons.squares-plus'),
             MenuItem::make(
                 'Команда',
-                new WorkerResource()
+                new WorkerResource
             )->icon('heroicons.users'),
             MenuItem::make(
                 'Отзывы',
-                new ReviewResource()
+                new ReviewResource
             )->icon('heroicons.book-open'),
             MenuItem::make(
                 'Спецпредложения',
-                new PromotionResource()
+                new PromotionResource
             )->icon('heroicons.currency-dollar'),
             MenuItem::make(
                 'Вопросы и ответы',
-                new QuestionResource()
+                new QuestionResource
             )->icon('heroicons.question-mark-circle'),
         ];
     }
