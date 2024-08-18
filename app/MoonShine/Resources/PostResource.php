@@ -96,6 +96,8 @@ class PostResource extends ModelResource
             'author' => ['required', 'string', 'max:50'],
             'thumbnail' => ['nullable', 'image', 'max:1024'],
             'image' => ['image', 'max:1024'],
+            'meta_title' => ['required', 'string', 'max:300'],
+            'meta_description' => ['required', 'string', 'max:1000'],
         ];
     }
 
