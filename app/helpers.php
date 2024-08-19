@@ -1,25 +1,30 @@
 <?php
 
+use App\DTO\TariffColor;
 use App\Models\AdditionalClass;
 use App\Models\Photo;
-use App\Models\Price;
 use App\Models\Promotion;
 use App\Models\Question;
 use App\Models\Review;
 use App\Models\Worker;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Support\Collection as SupportCollection;
 
-if (! function_exists('price')) {
-    function price(string $slug): Price
+if (! function_exists('tariff_colors')) {
+    function tariff_colors(): SupportCollection
     {
-        if (cache()->has('prices')) {
-            $prices = cache()->get('prices');
-        } else {
-            $prices = Price::all();
-            cache()->put('prices', $prices, now()->addDay());
-        }
+        return collect(config('setup.tariffs_colors'));
+    }
+}
 
-        return $prices->where('slug', $slug)->first();
+if (! function_exists('tariff_color')) {
+    function tariff_color(int $id): TariffColor
+    {
+        $colors = collect(config('setup.tariffs_colors'));
+
+        $color = $colors->where('id', $id)->first();
+
+        return TariffColor::fromConfig($color);
     }
 }
 

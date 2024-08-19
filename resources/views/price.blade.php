@@ -32,249 +32,61 @@
                 </h2>
                 <div class="tariffs__body swiper">
                     <div class="tariffs__wrapper swiper-wrapper">
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_01">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('full_day')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('full_day')->amount }} <small>₽/мес</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>4х разовое питание</li>
-                                            <li>2 прогулки</li>
-                                            <li>дневной отдых</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-                                            <li>дополнительные занятия</li>
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('full_day')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_02">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('half_full_day')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('half_full_day')->amount }} <small>₽/мес</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 13:00
-                                            </div>
-                                            <div class="time-tariff__label">
-                                                или
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                14:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>2х разовое питание</li>
-                                            <li>1 прогулка</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('half_full_day')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_03">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('12_visits')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('12_visits')->amount }} <small>₽/мес</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>4х разовое питание</li>
-                                            <li>2 прогулки</li>
-                                            <li>дневной отдых</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-                                            <li>дополнительные занятия</li>
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('12_visits')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_04">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('3_visits')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('3_visits')->amount }} <small>₽/мес</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>4х разовое питание</li>
-                                            <li>2 прогулки</li>
-                                            <li>дневной отдых</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-                                            <li>дополнительные занятия</li>
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('3_visits')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_05">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('day')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('day')->amount }} <small>₽</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>4х разовое питание</li>
-                                            <li>2 прогулки</li>
-                                            <li>дневной отдых</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-                                            <li>дополнительные занятия</li>
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('day')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tariffs__slide swiper-slide">
-                            <div class="tariff tariff_06">
-                                <div class="tariff__header">
-                                    <div class="tariff__title">{{ price('half')->title }}</div>
-                                    <div class="tariff__price">
-                                        {{ price('half')->amount }} <small>₽</small>
-                                    </div>
-                                </div>
-                                <div class="tariff__body body-tariffs">
-                                    <div class="body-tariffs__header">
-                                        <img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
-                                        <div class="time-tariff">
-                                            <div class="time-tariff__label">
-                                                Пн-Пт:
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                8:00 - 13:00
-                                            </div>
-                                            <div class="time-tariff__label">
-                                                или
-                                            </div>
-                                            <div class="time-tariff__value">
-                                                14:00 - 19:00
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="body-tariffs__content">
-                                        <div class="body-tariffs__title">Входит в стоимость</div>
-                                        <ul>
-                                            <li>2х разовое питание</li>
-                                            <li>1 прогулка</li>
-                                            <li>игровая деятельность</li>
-                                            <li>интегрированные и комплексные занятия в группе по возрасту ребёнка</li>
-
-                                        </ul>
-                                    </div>
-                                    <div class="body-tariffs__footer">
-                                        <button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ price('half')->title }}">
-                                            Оставить заявку
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						@foreach ($tariffs as $tariff)
+							<div class="tariffs__slide swiper-slide">
+								<div class="tariff" style="background-color: {{ tariff_color($tariff->color_id)->secondary }}">
+									<div class="tariff__header">
+										<div class="tariff__title" style="background-color: {{ tariff_color($tariff->color_id)->primary }}">
+											{{ $tariff->title }}
+										</div>
+										<div class="tariff__price">
+											{{ $tariff->getAmountFormat() }} 
+											<small>
+												@if ($tariff->price_per_month)
+													₽/мес
+												@else
+													₽
+												@endif
+											</small>
+										</div>
+									</div>
+									<div class="tariff__body body-tariffs">
+										<div class="body-tariffs__header">
+											<img src="{{ Vite::asset('resources/img/icons/time.svg') }}" alt="Image">
+											<div class="time-tariff">
+												<div class="time-tariff__label" style="color: {{ tariff_color($tariff->color_id)->primary }}">
+													{{ $tariff->weekdays }}:
+												</div>
+												<div class="time-tariff__value">
+													{{ $tariff->hours }}
+												</div>
+												@if ($tariff->or_hours)
+													<div class="time-tariff__label" style="color: {{ tariff_color($tariff->color_id)->primary }}">
+														или:
+													</div>
+													<div class="time-tariff__value">
+														{{ $tariff->or_hours }}
+													</div>
+												@endif
+											</div>
+										</div>
+										<div class="body-tariffs__content">
+											<div class="body-tariffs__title">Входит в стоимость</div>
+											<ul>
+												@foreach (explode("\n",$tariff->contains) as $item)
+													<li>{{ $item }}</li>
+												@endforeach
+											</ul>
+										</div>
+										<div class="body-tariffs__footer">
+											<button class="button body-tariffs__btn" type="button" data-popup data-form="Тариф {{ $tariff->title }}">
+												Оставить заявку
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						@endforeach
                     </div>
                     <div class="swiper-pagination"></div>
                     <div class="swiper-controls">

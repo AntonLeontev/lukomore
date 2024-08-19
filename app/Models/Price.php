@@ -11,23 +11,25 @@ class Price extends Model
 
     protected $fillable = [
         'title',
-        'slug',
         'amount',
     ];
 
-    public function getAmountAttribute($value): string
+    protected $casts = [
+        'price_per_month' => 'boolean',
+        'enabled' => 'boolean',
+    ];
+
+    public function getAmountFormat(): string
     {
-        return number_format($value, 0, '.', ' ');
+        return number_format($this->amount, 0, '.', ' ');
     }
 
     protected static function booted(): void
     {
-        static::created(function (Price $post) {
-            cache()->forget('prices');
-        });
+        static::creating(function (Price $price) {
+            $lastPosition = Price::max('position');
 
-        static::updated(function (Price $post) {
-            cache()->forget('prices');
+            $price->position = $lastPosition + 1;
         });
     }
 }

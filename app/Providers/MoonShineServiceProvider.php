@@ -62,7 +62,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 new PostResource
             )->icon('heroicons.book-open'),
             MenuItem::make(
-                'Цены',
+                'Тарифы',
                 new PriceResource
             )->icon('heroicons.banknotes'),
             MenuItem::make(

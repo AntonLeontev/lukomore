@@ -5,43 +5,45 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\Price;
+use App\MoonShine\Pages\Price\PriceDetailPage;
+use App\MoonShine\Pages\Price\PriceFormPage;
+use App\MoonShine\Pages\Price\PriceIndexPage;
 use Illuminate\Database\Eloquent\Model;
-use MoonShine\Components\MoonShineComponent;
-use MoonShine\Decorations\Block;
 use MoonShine\Enums\PageType;
-use MoonShine\Fields\Field;
-use MoonShine\Fields\Number;
-use MoonShine\Fields\Text;
+use MoonShine\MoonShineRequest;
+use MoonShine\Pages\Page;
 use MoonShine\Resources\ModelResource;
 
 /**
- * @extends ModelResource<Price>
+ * @extends ModelResource<Price1>
  */
 class PriceResource extends ModelResource
 {
     protected string $model = Price::class;
 
-    protected string $title = 'Цены';
+    protected string $title = 'Тарифы';
 
     protected ?PageType $redirectAfterSave = PageType::INDEX;
 
     protected string $column = 'title';
 
+    protected string $sortColumn = 'position';
+
+    protected string $sortDirection = 'ASC';
+
     /**
-     * @return list<MoonShineComponent|Field>
+     * @return list<Page>
      */
-    public function fields(): array
+    public function pages(): array
     {
         return [
-            Block::make([
-                Text::make('Название', 'title')
-                    ->required(),
-                Number::make('Цена', 'amount', fn ($item) => $item->amount.' ₽')
-                    ->min(0)
-                    ->step(1)
-                    ->expansion('₽')
-                    ->required(),
-            ]),
+            PriceIndexPage::make($this->title()),
+            PriceFormPage::make(
+                $this->getItemID()
+                    ? __('moonshine::ui.edit')
+                    : __('moonshine::ui.add')
+            ),
+            // PriceDetailPage::make(__('moonshine::ui.show')),
         ];
     }
 
@@ -56,11 +58,29 @@ class PriceResource extends ModelResource
         return [
             'title' => ['required', 'string', 'max:245'],
             'amount' => ['required', 'integer', 'min:0'],
+            'price_per_month' => ['required', 'boolean'],
+            'weekdays' => ['required', 'string', 'max:50'],
+            'hours' => ['required', 'string', 'max:50'],
+            'or_hours' => ['nullable', 'string', 'max:50'],
+            'contains' => ['required', 'string', 'max:255'],
+            'color_id' => ['required', 'integer'],
+            'enabled' => ['nullable', 'boolean'],
         ];
     }
 
     public function getActiveActions(): array
     {
-        return ['update'];
+        return ['update', 'create', 'delete'];
+    }
+
+    public function reorder(MoonShineRequest $request): void
+    {
+        $positions = $request->str('data')->explode(',')->flip();
+
+        Price::get()
+            ->each(static function (Price $price) use ($positions) {
+                $price->position = $positions->get($price->id);
+                $price->save();
+            });
     }
 }
