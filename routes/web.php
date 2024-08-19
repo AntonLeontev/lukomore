@@ -5,7 +5,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RequestController;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'home')->name('home');
+Route::view('/', [PageController::class, 'home'])->name('home');
 Route::view('/o-nas', 'about')->name('about');
 Route::view('/programmy-raspisanie', 'schedule')->name('schedule');
 Route::get('/stoimost', [PageController::class, 'price'])->name('price');
