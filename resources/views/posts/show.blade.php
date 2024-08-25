@@ -49,7 +49,7 @@
 											<div class="blog-content__body">
 												<h3 class="blog-content__title title title_h3">{{ $post->title }}</h3>
 												<div class="blog-content__text text text_l">
-													{{ $post->preview_text }}
+													{!! $post->preview_text !!}
 												</div>
 											</div>
 											<div class="blog-content__footer footer-blog">

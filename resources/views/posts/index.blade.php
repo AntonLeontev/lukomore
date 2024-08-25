@@ -99,7 +99,7 @@
                                                     </div>
                                                     <div class="blog-content__body">
                                                         <h3 class="blog-content__title title title_h3" x-text="post.title"></h3>
-                                                        <div class="blog-content__text text text_l" x-text="post.preview_text"></div>
+                                                        <div class="blog-content__text text text_l" x-html="post.preview_text"></div>
                                                     </div>
                                                     <div class="blog-content__footer footer-blog">
                                                         <div class="footer-blog__item">
