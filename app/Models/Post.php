@@ -19,6 +19,11 @@ class Post extends Model
         'thumbnail',
         'image',
         'views',
+        'is_enabled',
+    ];
+
+    protected $casts = [
+        'is_enabled' => 'boolean',
     ];
 
     public function getThumbnailUrlAttribute(): string

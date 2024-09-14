@@ -9,6 +9,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::query()
+            ->where('is_enabled', true)
             ->orderByDesc(request('sort', 'id'))
             ->select(['title', 'slug', 'thumbnail', 'views', 'author', 'preview_text', 'created_at'])
             ->paginate(6);

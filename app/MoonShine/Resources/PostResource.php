@@ -14,6 +14,7 @@ use MoonShine\Fields\Field;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Preview;
+use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Textarea;
 use MoonShine\Fields\TinyMce;
@@ -40,6 +41,10 @@ class PostResource extends ModelResource
         return [
             // ID::make()->sortable(),
             Block::make('Основное', [
+                Switcher::make('Выводить на сайте', 'is_enabled')
+                    ->default(true)
+                    ->updateOnPreview()
+                    ->hideOnIndex(),
                 Text::make('Заголовок', 'title')
                     ->sortable()
                     ->required(),
@@ -77,6 +82,9 @@ class PostResource extends ModelResource
                 ->hideOnForm(),
             Preview::make('Создана', 'created_at', fn ($item) => $item->created_at->translatedFormat('d F Y'))
                 ->sortable()
+                ->hideOnForm(),
+            Switcher::make('Видимость', 'is_enabled')
+                ->updateOnPreview()
                 ->hideOnForm(),
         ];
     }
