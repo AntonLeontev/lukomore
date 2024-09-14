@@ -19,8 +19,9 @@ task('build', function () {
     run('npm run build');
 });
 
-task('reboot', function () {
-    run('sudo reboot');
+task('sitemap', function () {
+    cd('{{release_path}}');
+    run('php artisan app:sitemap');
 });
 
 // Hosts
@@ -33,4 +34,4 @@ host('81.177.139.224')
 
 after('deploy:failed', 'deploy:unlock');
 after('deploy:vendors', 'build');
-// after('deploy:success', 'reboot');
+after('deploy:success', 'sitemap');

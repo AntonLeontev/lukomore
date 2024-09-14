@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://baltica-kids.ru</loc>
-        <lastmod>2024-06-28T12:00:01+00:00</lastmod>
-		<priority>1</priority>
-	
-	</url>
-    <url>
         <loc>https://baltica-kids.ru/o-nas</loc>
-        <lastmod>2024-06-28T12:00:02+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:29+00:00</lastmod>
 		<priority>0.9</priority>
 	
 	</url>
     <url>
         <loc>https://baltica-kids.ru/usloviya-priyema</loc>
-        <lastmod>2024-06-28T12:00:02+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:29+00:00</lastmod>
 		<priority>0.9</priority>
 	
 	</url>
     <url>
-        <loc>https://baltica-kids.ru/programmy-raspisanie</loc>
-        <lastmod>2024-06-28T12:00:02+00:00</lastmod>
+        <loc>https://baltica-kids.ru</loc>
+        <lastmod>2024-09-14T21:07:29+00:00</lastmod>
+		<priority>1</priority>
+	
+	</url>
+    <url>
+        <loc>https://baltica-kids.ru/faq</loc>
+        <lastmod>2024-09-14T21:07:30+00:00</lastmod>
 		<priority>0.9</priority>
 	
 	</url>
     <url>
         <loc>https://baltica-kids.ru/stoimost</loc>
-        <lastmod>2024-06-28T12:00:02+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:30+00:00</lastmod>
 		<priority>1</priority>
 	
 	</url>
     <url>
         <loc>https://baltica-kids.ru/sale</loc>
-        <lastmod>2024-06-28T12:00:03+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:30+00:00</lastmod>
+		<priority>0.9</priority>
+	
+	</url>
+    <url>
+        <loc>https://baltica-kids.ru/menu</loc>
+        <lastmod>2024-09-14T21:07:30+00:00</lastmod>
+		<priority>0.9</priority>
+	
+	</url>
+    <url>
+        <loc>https://baltica-kids.ru/programmy-raspisanie</loc>
+        <lastmod>2024-09-14T21:07:31+00:00</lastmod>
 		<priority>0.9</priority>
 	
 	</url>
     <url>
         <loc>https://baltica-kids.ru/groups/kittens</loc>
-        <lastmod>2024-06-28T12:00:03+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:31+00:00</lastmod>
 		<priority>0.8</priority>
 	
 	</url>
     <url>
-        <loc>https://baltica-kids.ru/menu</loc>
-        <lastmod>2024-06-28T12:00:03+00:00</lastmod>
-		<priority>0.9</priority>
-	
-	</url>
-    <url>
-        <loc>https://baltica-kids.ru/faq</loc>
-        <lastmod>2024-06-28T12:00:03+00:00</lastmod>
-		<priority>0.9</priority>
-	
-	</url>
-    <url>
         <loc>https://baltica-kids.ru/groups/cat</loc>
-        <lastmod>2024-06-28T12:00:03+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:31+00:00</lastmod>
 		<priority>0.8</priority>
 	
 	</url>
     <url>
         <loc>https://baltica-kids.ru/materinskiy-kapital</loc>
-        <lastmod>2024-06-28T12:00:04+00:00</lastmod>
+        <lastmod>2024-09-14T21:07:32+00:00</lastmod>
 		<priority>0.8</priority>
 	
 	</url>
