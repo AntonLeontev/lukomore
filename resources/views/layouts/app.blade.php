@@ -17,6 +17,8 @@
 	<meta property="og:url" content="{{ url()->current() }}">
 	{{-- <meta property="og:image" content="@yield('image')"> --}}
 
+	<meta name="google-site-verification" content="oL9qRWmV8X5JhAAz6HOA4mGAtfV5lBZjWDqFRxRRFWY" />
+
 	@vite(['resources/css/app.css', 'resources/js/app.js'])
 	<script defer src="/js/app.min.js"></script>
 	@routes
@@ -43,9 +45,24 @@
 	</script>
 	<noscript><div><img src="https://mc.yandex.ru/watch/98667156" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 	<!-- /Yandex.Metrika counter -->
+
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-W3W4KKZ7');</script>
+	<!-- End Google Tag Manager -->
+
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W3W4KKZ7"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
 	<div class="wrapper">
 		@include('partials.header')
 		@yield('content')
