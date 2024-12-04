@@ -29,7 +29,7 @@ class Sitemap extends Command
      */
     public function handle()
     {
-        SitemapGenerator::create('https://baltica-kids.ru')
+        SitemapGenerator::create('https://lukomoredeti.ru')
             ->shouldCrawl(function (UriInterface $url) {
                 if (strpos($url->getPath(), '/storage') !== false) {
                     return false;
