@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://baltica-kids.ru/sitemap.xml
+Sitemap: https://lukomoredeti.ru/sitemap.xml
