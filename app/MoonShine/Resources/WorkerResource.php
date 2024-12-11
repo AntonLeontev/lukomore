@@ -37,6 +37,7 @@ class WorkerResource extends ModelResource
             Block::make([
                 Text::make('Имя', 'name')
                     ->sortable()
+                    ->unescape()
                     ->required(),
                 TinyMce::make('Описание', 'description')
                     ->menubar('')
@@ -44,6 +45,7 @@ class WorkerResource extends ModelResource
                     ->hideOnIndex(),
                 Text::make('Должность', 'profession')
                     ->sortable()
+                    ->unescape()
                     ->required(),
                 Image::make('Фото', 'photo')
                     ->hint('Наилучший размер 370х500 пикселей')
