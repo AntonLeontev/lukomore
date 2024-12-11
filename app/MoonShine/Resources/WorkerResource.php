@@ -22,7 +22,7 @@ class WorkerResource extends ModelResource
 {
     protected string $model = Worker::class;
 
-    protected string $title = 'Workers';
+    protected string $title = 'Команда';
 
     protected ?PageType $redirectAfterSave = PageType::INDEX;
 
