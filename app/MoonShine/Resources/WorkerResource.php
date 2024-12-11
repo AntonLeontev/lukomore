@@ -65,7 +65,7 @@ class WorkerResource extends ModelResource
             'name' => ['required', 'string', 'max:255'],
             'description' => ['nullable', 'string', 'max:1000'],
             'profession' => ['required', 'string', 'max:255'],
-            'photo' => ['image', 'max:1024'],
+            'photo' => ['required', 'image', 'max:1024'],
         ];
     }
 }
